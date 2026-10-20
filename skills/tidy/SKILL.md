@@ -1,6 +1,6 @@
 ---
 name: tidy
-description: Use when writing new code or changing existing code in an established codebase, including new features, files, fixes, and edits. Makes the code match the surrounding style and conventions, and keeps the diff as small as possible. Do not use when the user explicitly asks for a refactor, reformat, or style change.
+description: Use when writing new code or changing existing code in an established codebase or in a freshly developed code base, including new features, files, fixes, and edits. Makes the code match the surrounding style and conventions, and keeps the diff as small as possible. Do not use when the user explicitly asks for a refactor, reformat, or style change.
 ---
 # Tidy
 
@@ -31,6 +31,11 @@ When there's no existing code to mirror, establish conventions instead of copyin
 2. **Otherwise, use the language's standard conventions** (e.g. PEP 8 for Python, the framework's official style guide).
 3. **Stay consistent with yourself.** Once you've written the first file, treat it as the "nearby code" for Rule 1, and match it in every file after.
 4. **Keep it minimal.** Build only what the task asks for, with no extra scaffolding, abstractions, or dependencies "for later". Rules 2 and 3 still apply.
+5. **Set up formatting first (JS/TS projects).** Before writing any code, if the project has a `package.json` and no formatter yet, ask the user whether to add Prettier. If they agree:
+   - Run `npm install --save-dev --save-exact prettier`
+   - Create a `.prettierrc` with `{}` (Prettier's defaults)
+   - Create a `.prettierignore` listing build output (e.g. `dist`, `build`, `coverage`)
+   - Don't add Prettier if the project already uses another formatter (e.g. Biome, dprint), or if it isn't a JS/TS project.
 
 **Why:** A new project's first files become the style everything else copies, so make them clean and consistent.
 

@@ -1,0 +1,7 @@
+{
+  "name": "tidy",
+  "description": "Makes Claude follow a codebase's existing style with minimal diffs.",
+  "version": "0.0.1",
+  "author": { "name": "Lance" },
+  "repository": "https://github.com/RaphaelLance/Tidy"
+}
