@@ -1,0 +1,9 @@
+{
+  "name": "tidy",
+  "description": "Makes Claude follow a codebase's existing style with minimal diffs.",
+  "version": "0.1.0",
+  "author": { "name": "Lance" },
+  "homepage": "https://github.com/RaphaelLance/Tidy",
+  "repository": "https://github.com/RaphaelLance/Tidy",
+  "keywords": ["style", "minimal-diff", "prettier", "conventions"]
+}

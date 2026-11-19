@@ -1,0 +1,12 @@
+{
+  "name": "tidy",
+  "description": "Tidy: Claude follows your codebase's style with minimal diffs.",
+  "owner": { "name": "Lance" },
+  "plugins": [
+    {
+      "name": "tidy",
+      "source": "./",
+      "description": "Makes Claude follow a codebase's existing style with minimal diffs."
+    }
+  ]
+}
